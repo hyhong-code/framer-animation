@@ -1,4 +1,26 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
+export const Backdrop = styled(motion.div)`
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+`;
+
+export const Modal = styled(motion.div)`
+  width: 10rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+`;
 
 export const Header = styled.header`
   background: var(--black);
